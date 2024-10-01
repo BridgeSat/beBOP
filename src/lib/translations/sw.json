@@ -1,0 +1,674 @@
+{
+    "address": {
+      "address": "Anwani",
+      "city": "Jiji",
+      "companyName": "Jina la kampuni",
+      "country": "Nchi",
+      "firstName": "Jina la kwanza",
+      "lastName": "Jina la mwisho",
+      "phone": "Simu",
+      "phoneCode": "Ikiwa namba yako sio ya nchi sawa na nchi ya utoaji, tafadhali andika msimbo wa kimataifa.",
+      "phoneDisclaimer": "Namba ya simu mara nyingine inahitajika na wasafirishaji. Hatutatumia namba hii kwa shughuli za masoko.",
+      "state": "Jimbo / Mkoa",
+      "vatNumber": "Namba ya VAT",
+      "zipCode": "Msimbo wa posta"
+    },
+    "cart": {
+      "cta": {
+        "checkout": "Agiza",
+        "discardItem": "Ondoa",
+        "view": "Tazama kikapu"
+      },
+      "empty": "Kikapu ni tupu",
+      "items": "Bidhaa",
+      "quantity": "Kiasi",
+      "reachedMaxPerLine": "Kikapu chako kimefika ukubwa wa juu. Tafadhali ondoa mistari kwenye kikapu chako kuongeza bidhaa zaidi.",
+      "remaining": "Bado baada ya agizo",
+      "remainingHelpText": "Kwa bidhaa za amana, agizo la sasa ni malipo ya awali. Ili kukamilisha ununuzi, kiasi kinachofuata lazima kilipwe baadaye. (VAT imejumuishwa tayari katika kiasi)",
+      "remainingShort": "Baadaye",
+      "sr": {
+        "decrease": "Punguza kiasi",
+        "increase": "Ongeza kiasi",
+        "remove": "Ondoa kipengee kutoka kikapu"
+      },
+      "total": "Jumla",
+      "vat": "VAT",
+      "vatIpCountry": "Imedhamiriwa na anwani yako ya IP na data kutoka <0></0>",
+      "vatIpCountryText": "Imedhamiriwa na anwani yako ya IP na data kutoka {link}",
+      "vatNullOutsideSellerCountry": "VAT kwa bidhaa za kimwili italipwa na mteja katika forodha wakati wa utoaji",
+      "vatRate": "Kiwango cha VAT: {country}",
+      "vatSellerCountry": "VAT ni ya nchi ya muuzaji."
+    },
+    "challenge": {
+      "beginsAt": "Inaanza katika siku {days}",
+      "ended": "Imeisha!",
+      "endsAt": "Inaisha mnamo <0></0> saa <1></1>",
+      "goalMet": "Asante kwa wote! \n👏👏",
+      "goalOvershot": "Ninyi ni wa ajabu! \n🤭",
+      "list": "Orodha ya changamoto",
+      "moneyAmount": {
+        "goalOvershot": "<0></0> juu ya lengo la <1></1>! Ninyi ni wa ajabu!"
+      },
+      "numProducts": {
+      "one": "{count} bidhaa",
+      "other": "{count} bidhaa",
+      "zero": "{count} bidhaa"
+    },
+    "singleTitle": "Changamoto {name}",
+    "title": "Changamoto",
+    "totalProducts": {
+      "goalOvershot": "{progress} mauzo ya awali juu ya lengo la {goal}! Ninyi ni wa ajabu!"
+    }
+  },
+  "checkout": {
+    "agreeIpCollect": "Ninakubali kukusanywa kwa anwani yangu ya IP (<0>kwa nini?</0>)",
+    "agreeNullVatForeigner": "Ninaelewa kwamba nitapaswa kulipa VAT wakati wa utoaji (<0>kwa nini?</0>)",
+    "agreeOnlyDeposit": "Ninaelewa kwamba lazima nilipie deni lililobaki nje ya amana (<0>kwa nini?</0>)",
+    "backToCart": "Rudi kwenye kikapu",
+    "billingInfo": "Anwani ya bili",
+    "cta": {
+      "submit": "Lipa"
+    },
+    "deliveryFees": "Ushiriki wa gharama za usafirishaji",
+    "deliveryFeesEstimationTooltip": "Hii ni makadirio, kiasi cha mwisho kitaamuliwa na nchi yako ya utoaji.",
+    "differentBillingAddress": "Anwani yangu ya utoaji na anwani yangu ya bili ni tofauti",
+    "digitalNoShippingNeeded": "Bidhaa zote kwenye kikapu chako ni za kidigitali. Huna haja ya kutoa anwani ya utoaji.",
+    "invalidNpub": "Anwani ya umma ya Nostr si sahihi",
+    "isProBilling": "Hii ni agizo la kitaalamu",
+    "multiplePaymentMethods": "Tumia njia nyingi za malipo",
+    "multiplePaymentMethodsHelpText": "Utaweza kufafanua njia za malipo katika hatua inayofuata.",
+    "noDeliveryInCountry": "Utoaji haupatikani katika nchi yako kwa baadhi ya bidhaa kwenye kikapu chako.",
+    "note": {
+      "label": "Acha ujumbe kwa muuzaji",
+      "title": "Kumbuka"
+    },
+    "notifications": {
+      "email": "Barua pepe",
+      "message": "Tafadhali jaza angalau anwani moja ya mawasiliano ili upate taarifa kuhusu maendeleo ya agizo lako.",
+      "npub": "Anwani ya umma ya Nostr",
+      "title": "Arifa"
+    },
+    "numProducts": {
+      "one": "{count} bidhaa",
+      "other": "{count} bidhaa",
+      "zero": "{count} bidhaa"
+    },
+    "onLocation": "Hili ni agizo la kimwili mahali palipolipwa kikamilifu",
+    "payment": {
+      "method": "Njia ya malipo",
+      "title": "Malipo"
+    },
+    "paymentMethod": {
+      "bank-transfer": "Uhamisho wa benki",
+      "bitcoin": "BTC on-chain",
+      "card": "Kadi ya benki",
+      "cash": "Pesa taslimu",
+      "free": "Hakuna cha kulipa (kikapu bure)",
+      "lightning": "Lightning",
+      "paypal": "Paypal",
+      "point-of-sale": "Sehemu ya uuzaji",
+      "unavailable": "Hakuna njia ya malipo inayopatikana."
+    },
+    "paymentStatus": "Hali ya malipo",
+    "reasonOfferFeesDefault": "Agizo la kimwili mahali palipolipwa kikamilifu",
+    "receiptNote": {
+      "label": "Ongeza maelezo ya ziada kwenye risiti"
+    },
+    "shipmentInfo": "Taarifa za usafirishaji",
+    "title": "Utoaji na malipo",
+    "tosAgree": "Ninakubali <0>masharti ya matumizi</0>",
+    "vatShippingAddress": "Nchi imedhamiriwa na anwani ya utoaji"
+  },
+  "contact": {
+    "form": {
+      "contactUs": "Wasiliana nasi"
+    }
+  },
+  "contactForm": {
+    "content": "Ujumbe",
+    "from": "Anwani ya mawasiliano",
+    "subject": "Ombi"
+  },
+  "country": {
+    "alpha2": {
+      "AD": "Andorra",
+      "AE": "Falme za Kiarabu",
+      "AF": "Afghanistan",
+      "AG": "Antigua na Barbuda",
+      "AI": "Anguilla",
+      "AL": "Albania",
+      "AM": "Armenia",
+      "AN": "Antili za Uholanzi",
+      "AO": "Angola",
+      "AQ": "Antaktika",
+      "AR": "Argentina",
+      "AS": "Samoa ya Marekani",
+      "AT": "Austria",
+      "AU": "Australia",
+      "AW": "Aruba",
+      "AZ": "Azerbaijan",
+      "BA": "Bosnia na Herzegovina",
+      "BB": "Barbados",
+      "BD": "Bangladesh",
+      "BE": "Ubelgiji",
+      "BF": "Burkina Faso",
+      "BG": "Bulgaria",
+      "BH": "Bahrain",
+      "BI": "Burundi",
+      "BJ": "Benin",
+      "BM": "Bermuda",
+      "BN": "Brunei",
+      "BO": "Bolivia",
+      "BQ": "Bonaire",
+      "BR": "Brazil",
+      "BS": "Bahama",
+      "BT": "Bhutan",
+      "BV": "Kisiwa cha Bouvet",
+      "BW": "Botswana",
+      "BY": "Belarus",
+      "BZ": "Belize",
+      "CA": "Kanada",
+      "CC": "Visiwa vya Cocos (Keeling)",
+      "CD": "Jamhuri ya Kidemokrasia ya Kongo",
+      "CF": "Jamhuri ya Afrika ya Kati",
+      "CG": "Kongo",
+      "CH": "Uswisi",
+      "CI": "Ivory Coast",
+      "CK": "Visiwa vya Cook",
+      "CL": "Chile",
+      "CM": "Kameruni",
+      "CN": "China",
+      "CO": "Kolombia",
+      "CR": "Costa Rica",
+      "CU": "Kuba",
+      "CV": "Cape Verde",
+      "CW": "Curacao",
+      "CX": "Kisiwa cha Krismasi",
+      "CY": "Cyprus",
+      "CZ": "Jamhuri ya Czech",
+      "DE": "Ujerumani",
+      "DJ": "Djibouti",
+      "DK": "Denmark",
+      "DM": "Dominika",
+      "DO": "Jamhuri ya Dominika",
+      "DZ": "Algeria",
+      "EC": "Ecuador",
+      "EE": "Estonia",
+      "EG": "Misri",
+      "EH": "Sahara Magharibi",
+      "ER": "Eritrea",
+      "ES": "Uhispania",
+      "ET": "Ethiopia",
+      "FI": "Finland",
+      "FJ": "Fiji",
+      "FK": "Visiwa vya Falkland (Malvinas)",
+      "FM": "Micronesia",
+      "FO": "Visiwa vya Faroe",
+      "FR": "Ufaransa",
+      "GA": "Gabon",
+      "GB": "Uingereza",
+      "GD": "Grenada",
+      "GE": "Georgia",
+      "GF": "Guiana ya Kifaransa",
+      "GG": "Guernsey",
+      "GH": "Ghana",
+      "GI": "Gibraltar",
+      "GL": "Greenland",
+      "GM": "Gambia",
+      "GN": "Guinea",
+      "GP": "Guadeloupe",
+      "GQ": "Equatorial Guinea",
+      "GR": "Ugiriki",
+      "GS": "Georgia ya Kusini na Visiwa vya Sandwich Kusini",
+      "GT": "Guatemala",
+      "GU": "Guam",
+      "GW": "Guinea-Bissau",
+      "GY": "Guyana",
+      "HK": "Hong Kong",
+      "HM": "Kisiwa cha Heard na Visiwa vya McDonald",
+      "HN": "Honduras",
+      "HR": "Kroatia",
+      "HT": "Haiti",
+      "HU": "Hungary",
+      "IC": "Visiwa vya Canary",
+      "ID": "Indonesia",
+      "IE": "Ireland",
+      "IL": "Israeli",
+      "IM": "Kisiwa cha Man",
+      "IN": "India",
+      "IO": "Eneo la Bahari la Uingereza ya India",
+      "IQ": "Iraq",
+      "IR": "Iran",
+      "IS": "Iceland",
+      "IT": "Italia",
+      "JE": "Jersey",
+      "JM": "Jamaica",
+      "JO": "Jordan",
+      "JP": "Japani",
+      "KE": "Kenya",
+      "KG": "Kyrgyzstan",
+      "KH": "Cambodia",
+      "KI": "Kiribati",
+      "KM": "Comoro",
+      "KN": "Saint Kitts na Nevis",
+      "KP": "Korea ya Kaskazini",
+      "KR": "Korea ya Kusini",
+      "KW": "Kuwait",
+      "KY": "Visiwa vya Cayman",
+      "KZ": "Kazakhstan",
+      "LA": "Laos",
+      "LB": "Lebanon",
+      "LC": "Saint Lucia",
+      "LI": "Liechtenstein",
+      "LK": "Sri Lanka",
+      "LR": "Liberia",
+      "LS": "Lesotho",
+      "LT": "Lithuania",
+      "LU": "Luxembourg",
+      "LV": "Latvia",
+      "LY": "Libya",
+      "MA": "Morocco",
+      "MC": "Monaco",
+      "MD": "Moldova",
+      "ME": "Montenegro",
+      "MF": "Saint Martin",
+      "MG": "Madagascar",
+      "MH": "Visiwa vya Marshall",
+      "MK": "Macedonia",
+      "ML": "Mali",
+      "MM": "Myanmar",
+      "MN": "Mongolia",
+      "MO": "Macau",
+      "MP": "Visiwa vya Mariana Kaskazini",
+      "MQ": "Martinique",
+      "MR": "Mauritania",
+      "MS": "Montserrat",
+      "MT": "Malta",
+      "MU": "Mauritius",
+      "MV": "Maldives",
+      "MW": "Malawi",
+      "MX": "Mexico",
+      "MY": "Malaysia",
+      "MZ": "Msumbiji",
+      "NA": "Namibia",
+      "NC": "New Caledonia",
+      "NE": "Niger",
+      "NF": "Kisiwa cha Norfolk",
+      "NG": "Nigeria",
+      "NI": "Nicaragua",
+      "NL": "Netherlands",
+      "NO": "Norway",
+      "NP": "Nepal",
+      "NR": "Nauru",
+      "NU": "Niue",
+      "NZ": "New Zealand",
+      "OM": "Oman",
+      "PA": "Panama",
+      "PE": "Peru",
+      "PF": "Polynesia ya Kifaransa",
+      "PG": "Papua New Guinea",
+      "PH": "Philippines",
+      "PK": "Pakistan",
+      "PL": "Poland",
+      "PM": "Saint Pierre na Miquelon",
+      "PN": "Pitcairn",
+      "PR": "Puerto Rico",
+      "PS": "Palestina",
+      "PT": "Ureno",
+      "PW": "Palau",
+      "PY": "Paraguay",
+      "QA": "Qatar",
+      "RE": "Réunion",
+      "RO": "Romania",
+      "RS": "Serbia",
+      "RU": "Urusi",
+      "RW": "Rwanda",
+      "SA": "Saudi Arabia",
+      "SB": "Visiwa vya Solomon",
+      "SC": "Seychelles",
+      "SD": "Sudan",
+      "SE": "Sweden",
+      "SG": "Singapore",
+      "SH": "Saint Helena, Ascension na Tristan da Cunha",
+      "SI": "Slovenia",
+      "SJ": "Svalbard na Jan Mayen",
+      "SK": "Slovakia",
+      "SL": "Sierra Leone",
+      "SM": "San Marino",
+      "SN": "Senegal",
+      "SO": "Somalia",
+      "SR": "Suriname",
+      "SS": "Sudan Kusini",
+      "ST": "Sao Tome na Principe",
+      "SV": "El Salvador",
+      "SY": "Syria",
+      "SZ": "Swaziland",
+      "TC": "Visiwa vya Turks na Caicos",
+      "TD": "Chad",
+      "TF": "Nchi za kusini mwa Ufaransa",
+      "TG": "Togo",
+      "TH": "Thailand",
+      "TJ": "Tajikistan",
+      "TK": "Tokelau",
+      "TL": "Timor-Leste",
+      "TM": "Turkmenistan",
+      "TN": "Tunisia",
+      "TO": "Tonga",
+      "TR": "Turkey",
+      "TT": "Trinidad na Tobago",
+      "TV": "Tuvalu",
+      "TW": "Taiwan",
+      "TZ": "Tanzania",
+      "UA": "Ukraine",
+      "UG": "Uganda",
+      "UM": "Visiwa vidogo vya mbali vya Marekani",
+      "US": "Marekani",
+      "UY": "Uruguay",
+      "UZ": "Uzbekistan",
+      "VA": "Vatican",
+      "VC": "Saint Vincent na Grenadines",
+      "VE": "Venezuela",
+      "VG": "Visiwa vya Virgin vya Uingereza",
+      "VI": "Visiwa vya Virgin vya Marekani",
+      "VN": "Vietnam",
+      "VU": "Vanuatu",
+      "WF": "Wallis na Futuna",
+      "WS": "Samoa",
+      "XK": "Kosovo",
+      "YE": "Yemen",
+      "YT": "Mayotte",
+      "ZA": "Afrika Kusini",
+      "ZM": "Zambia",
+      "ZW": "Zimbabwe"
+    }
+  },
+  "error": {
+    "404": "Ukurasa {invalidUrl} uliyoomba haukupatikana. Tafadhali hakikisha kwamba kiungo chako ni sahihi au wasiliana na timu ya tovuti kuripoti tatizo hilo.",
+    "title": "Hitilafu {status}"
+  },
+  "footer": {
+    "company": {
+      "contact": "Mawasiliano ya kampuni",
+      "identity": "Kitambulisho cha kampuni"
+    },
+    "poweredBy": "Inaendeshwa na",
+    "shop": {
+      "info": "duka letu"
+    }
+  },
+  "general": {
+    "copied": "Imenakiliwa"
+  },
+  "identity": {
+    "cta": {
+      "update": "Sasisha"
+    },
+    "personalInformation": "Taarifa za Kibinafsi"
+  },
+  "login": {
+    "authenticate": {
+      "ctaCancelLabel": "Rudi",
+      "ctaLabel": "Thibitisha",
+      "disclaimer": "Kwa sababu za usalama, tovuti yetu haihifadhi nywila zozote. Unaweza kufikia akaunti yako na historia ya agizo kupitia kiungo cha faragha cha kuingia, au kupitia akaunti ya wahusika wengine (SSO).",
+      "inputLabel": "Barua pepe au npub",
+      "title": "Ongeza uthibitishaji"
+    },
+    "cta": {
+      "authenticateAs": "Thibitisha kama {as}",
+      "clearSession": "Futa kikao",
+      "identity": "Kitambulisho",
+      "logout": "Toka",
+      "orders": "Maagizo",
+      "signInWith": "Ingia na {provider}"
+    },
+    "password": {
+      "pwned": "Nywila yako si salama, imepatikana katika uvujaji wa data {count}. Tafadhali rejesha upya nywila yako."
+    },
+    "session": {
+      "email": "Barua pepe: {email}",
+      "identityPrefill": "Unaweza kujaza kabla anwani yako ya posta na anwani ya mawasiliano. Katika tukio la agizo, taarifa hizi zitajazwa kabla. Ikiwa utaamua kuunda akaunti baadaye, taarifa hizi zitaokolewa kwa ununuzi wa baadaye.",
+      "npub": "Npub: {npub}",
+      "title": "Kikao",
+      "userId": "Kitambulisho cha mtumiaji: {userId}"
+    },
+    "sso": {
+      "title": "Au ingia na"
+    },
+    "willReceiveSessionLink": "Utapokea kiungo cha kikao kwa anwani yako"
+  },
+  "newsletter": {
+    "allowPartnerContact": "Ruhusu washirika wetu kukutumia ofa za kibiashara",
+    "allowSellerContact": "Tukuruhusu kukutumia ofa za kibiashara"
+  },
+  "order": {
+    "addPayment": {
+      "amount": "Kiasi cha malipo",
+      "cta": "Tuma ombi la malipo",
+      "currency": "Sarafu ya malipo"
+    },
+    "backToOrder": "<< Rudi kwenye agizo",
+    "clickQR": "Bofya msimbo wa QR kulipa kwa mkoba wako",
+    "confirmCancel": "Je, una uhakika? \nIkiwa hii ndiyo malipo yako pekee yanayosubiri na hakuna malipo yaliyolipwa kwenye agizo, agizo litaondolewa. \nKatika tukio la makosa, tengeneza kwanza malipo, kisha futa hii.",
+    "contactAddress": {
+      "title": "Anwani ya mawasiliano"
+    },
+    "copyAddress": "Nakili anwani ya malipo",
+    "createdAt": "Tarehe ya agizo: <0></0>",
+    "depositCancelled": "Ombi la amana limefutwa",
+    "depositExpired": "Ombi la amana limeisha muda wake",
+    "depositPaid": "Amana imelipwa",
+    "depositToPay": "Amana ya kulipa",
+    "discount": {
+      "title": "Punguzo"
+    },
+    "informSeller": "Arifu muuzaji",
+    "linkReminder": "Hifadhi kiungo hiki: <0></0> kufikia agizo baadaye.",
+    "list": {
+      "title": "Orodha ya maagizo yako"
+    },
+    "note": {
+      "author": "{alias} (Mwajiriwa)",
+      "authorCustomer": "Mteja",
+      "backToOrder": "Nenda kwenye agizo",
+      "label": "Kumbuka ya mwajiriwa",
+      "saveText": "Hifadhi kumbuka",
+      "seeText": "Tazama kumbuka za agizo",
+      "title": "Kumbuka za agizo #{number}"
+    },
+    "paidAt": "Tarehe ya malipo: <0></0>",
+    "paidWith": {
+      "bank-transfer": "Imelipwa na: uhamisho wa benki uliohakikishwa",
+      "bitcoin": "Imelipwa na: Malipo ya Bitcoin on-chain (1 {paymentCurrency} = {exchangeRate} {mainCurrency} wakati wa agizo)",
+      "card": "Imelipwa na: kadi ya benki kupitia Sum UP",
+      "free": "Hakuna kilicholipwa",
+      "lightning": "Imelipwa na: Muamala wa Lightning (1 {paymentCurrency} = {exchangeRate} {mainCurrency} wakati wa agizo)",
+      "point-of-sale": "Imelipwa dukani"
+    },
+    "paidWithSummary": {
+      "bank-transfer": "Imelipwa na: uhamisho wa benki uliohakikishwa",
+      "bitcoin": "Imelipwa na: Malipo ya Bitcoin on-chain",
+      "card": "Imelipwa na: kadi ya benki kupitia Sum UP",
+      "free": "Hakuna kilicholipwa",
+      "lightning": "Imelipwa na: Muamala wa Lightning",
+      "point-of-sale": "Imelipwa dukani"
+    },
+    "payToComplete": "Lipa kukamilisha agizo.",
+    "payToCompleteBitcoin": {
+      "one": "Malipo yatathibitishwa baada ya uthibitisho 1.",
+      "other": "Malipo yatathibitishwa baada ya uthibitisho {count}.",
+      "zero": "Malipo yatathibitishwa bila kungoja uthibitisho."
+    },
+    "paymentAccountHolder": "Mmiliki wa akaunti",
+    "paymentAccountHolderAddress": "Anwani",
+    "paymentAddress": "Anwani ya malipo ",
+    "paymentAmount": "Kiasi cha muamala (bila ada)",
+    "paymentBic": "BIC",
+    "paymentExpiresAt": "Muda wa mwisho wa malipo: <0></0>",
+    "paymentIban": "IBAN ya malipo",
+    "paymentLink": "Bofya kulipa kwa kadi na",
+    "paymentLinkGeneric": "Bofya hapa kulipa na",
+    "paymentPaidAt": "Malipo yamefanyika mnamo {date}",
+    "paymentStatus": {
+      "canceled": "imefutwa",
+      "canceledTemplate": "Agizo lako limefutwa kwa mikono katika back-office.",
+      "expired": "limeisha muda wake",
+      "expiredTemplate": "Agizo lako limeisha muda wake kwa sababu ya kuchelewa kulipa. \nIkiwa umelipa agizo hili, tafadhali wasiliana na huduma kwa wateja wetu.",
+      "paid": "limekamilika",
+      "paidTemplate": "Agizo lako ni <0>halali</0>!",
+      "partiallyPaid": "limekamilika kwa sehemu",
+      "pending": "inasubiri"
+    },
+    "paymentStatusNpub": "Anwani ya umma ya Nostr kwa hali ya malipo",
+    "receipt": {
+      "accountHolder": "Mmiliki wa akaunti",
+      "accountHolderAddress": "Anwani",
+      "alreadyPaidAmount": "Kiasi kilicholipwa",
+      "bankInfo": "Taarifa za benki",
+      "cancelledOrPending": "Ombi hili la malipo halijatimizwa na limeisha muda wake au limefutwa",
+      "create": "Pakua risiti",
+      "createProforma": "Pakua proforma",
+      "endMessage": "Tuko tayari kukusaidia kwa maelezo zaidi. \n<0></0> Kwa heshima, <1></1> {businessName}",
+      "fullyPaid": {
+        "message": "Kwa malipo haya, agizo {orderNumber} sasa limekamilika kikamilifu"
+      },
+      "invoice": "Risiti",
+      "invoiceNumber": "{invoiceNumber}",
+      "itemName": "Asili",
+      "partialAmount": "Kiasi kilicholipwa (malipo ya sehemu)",
+      "partialAmountPre": "Kiasi kinachohitajika kulipwa (malipo ya sehemu)",
+      "proforma": "Hii ni risiti ya proforma. Hakuna malipo yaliyofanyika. Risiti ya mwisho itatolewa baada ya malipo.",
+      "proformaInvoiceNumber": "PROFORMA-{orderNumber}-{paymentIndex}",
+      "quantity": "Kiasi",
+      "remainingAmount": "Kiasi kilichobaki kulipwa",
+      "summaryTitle": "Muhtasari wa agizo #{number}",
+      "totalExcVat": "Jumla bila VAT",
+      "totalInclVat": "Jumla na VAT",
+      "totalVat": "Jumla ya VAT",
+      "unitPrice": "Bei ya kipande HT",
+      "vatFreeReason": "Imeachwa VAT: {reason}"
+    },
+    "receiptFullyPaid": "Tengeneza risiti (lilipwa kikamilifu)",
+    "receiptPending": "Tengeneza risiti (inasubiri malipo)",
+    "related": {
+      "invoice": "✅ Risiti nambari {invoiceNumber}",
+      "invoiceFailed": "❌ Risiti nambari {invoiceNumber}",
+      "invoicePending": "⏲ Risiti nambari {invoiceNumber} (inasubiri malipo)",
+      "title": "Risiti zinazohusiana"
+    },
+    "requestedAt": "Tarehe ya ombi la malipo: <0></0>",
+    "restToPay": "Bado kulipwa",
+    "shippingAddress": {
+      "title": "Anwani ya utoaji"
+    },
+    "singleTitle": "Agizo #{number}",
+    "summary": {
+      "fullyPaid": {
+        "title": "Agizo lililipwa kikamilifu, hakuna deni lililosalia"
+      }
+    },
+    "tickets": {
+      "printAll": "Chapa yote",
+      "seeAll": "Tazama yote",
+      "ticket": "Tiketi #{number}",
+      "title": "Tiketi"
+    },
+    "timeRemaining": "Muda uliobaki kabla ya kumalizika kwa malipo katika mifumo yetu: dakika {minutes}",
+    "vatFree": "Agizo hili halitozwi VAT. \nSababu: {reason}"
+  },
+  "pos": {
+    "adminInterface": "Kiolesura cha usimamizi",
+    "applyGiftDiscount": "Kama mtumiaji wa kituo cha kuuza, ninatumia <0>punguzo la zawadi</0>",
+    "cta": {
+      "cancelOrder": "Futa",
+      "markOrderPaid": "Tandaza kama limekamilika",
+      "updatePaymentInfo": "Sasisha taarifa za malipo"
+    },
+    "discountJustification": "Sababu",
+    "invalidDiscount": "Punguzo si sahihi!",
+    "lastOrders": {
+      "title": "Maagizo ya mwisho"
+    },
+    "offerDeliveryFees": "Ondoa ada za utoaji kwa agizo hili",
+    "order": {
+      "satReceived": "kupokelewa"
+    },
+    "pendingPayment": "Malipo yanaendelea",
+    "session": {
+      "waitingPaymentConfirmation": "Kusubiri uthibitisho wa malipo",
+      "welcomeMessage": "Tuna furaha kukuona",
+      "welcomeTitle": "Karibu"
+    },
+    "sessionLink": "Kikao cha kituo cha kuuza",
+    "sessionTouchLink": "Kikao cha kituo cha kuuza - skrini ya mguso",
+    "vatFree": "Hii ni agizo lisilo na VAT (<0>masharti</0>)",
+    "vatFreeReason": "Sababu ya kutoza VAT"
+  },
+  "product": {
+    "addedToCart": "Bidhaa imeongezwa kwenye kikapu",
+    "availableOn": "Inapatikana tarehe {date}",
+    "checkBackLater": "Tafadhali rudi baadaye",
+    "cta": {
+      "add": "Ongeza kwenye kikapu",
+      "buy": "Agiza",
+      "details": "Maelezo",
+      "donate": "Changia",
+      "preorder": "Agiza mapema",
+      "subscribe": "Jisajili"
+    },
+    "deposit": {
+      "payFullPrice": "Lipa kiasi kamili sasa",
+      "payPercentage": "Lipa {percentage} sasa"
+    },
+    "digitalFiles": {
+      "title": "Faili zinazoweza kupakuliwa"
+    },
+    "discountBanner": "{discountPercent}% punguzo kwa {hours}h",
+    "freeWithSub": "Bidhaa hii inapatikana bure na usajili wako wa kila mwezi",
+    "freeWithTitle": "Bure na \"xxxxx",
+    "horsTaxeShort": "HT",
+    "minimumForCurrency": "Kiasi cha chini kwa {currency} ni {minimum}",
+    "nameYourPrice": "Chagua bei yako ({currency})",
+    "notForSale": "Bidhaa hii haipatikani kwa uuzaji kupitia jukwaa hili, tafadhali wasiliana nasi",
+    "outOfStock": "Imekwisha, tafadhali wasiliana nasi",
+    "preorderText": "Inapatikana mapema, tarehe {date}",
+    "pricePlaceholder": "Bei",
+    "seeInCabinet": "Tazama katika Kabati Langu",
+    "type": {
+      "deposit": "Kwa amana",
+      "digitalResource": "Rasilimali ya kidigitali",
+      "donation": "Mchango",
+      "physical": "Kimwili",
+      "preorder": "Agizo la mapema",
+      "preview": "Mwonekano",
+      "resource": "Rasilimali",
+      "subscription": "Usajili",
+      "ticket": "Tiketi"
+    },
+    "vatExcluded": "Bila VAT"
+  },
+  "subscription": {
+    "associated": {
+      "npub": "Imesajiliwa na npub: {npub}"
+    },
+    "cantRenew": "Usajili hauwezi kufanywa upya",
+    "cta": {
+      "renew": "Fanya upya"
+    },
+    "initiallyCreated": "Uliundwa awali: <0></0>",
+    "paidUntil": "Umelipwa hadi: <0></0>",
+    "singleTitle": "Usajili #{number}",
+    "status": {
+      "expired": "imeisha muda wake"
+    }
+  },
+  "ticket": {
+    "boughtAt": "Ilinunuliwa tarehe {date} saa {time}",
+    "burn": "Onyesha tiketi kuwa imetumika",
+    "print": "Chapa",
+    "scanned": "🔥 Tiketi hii ilichanganuliwa tarehe {date} saa {time} na haipatikani tena",
+    "unburn": "Onyesha tiketi kuwa haijatumika"
+  },
+  "widget": {
+    "specification": "Vipimo vya kiufundi"
+  }
+}

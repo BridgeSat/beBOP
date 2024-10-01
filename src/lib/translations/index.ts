@@ -3,13 +3,15 @@ import en from './en.json';
 import es_sv from './es-sv.json';
 import fr from './fr.json';
 import nl from './nl.json';
+import sw from './sw.json';
 import { typedKeys } from '$lib/utils/typedKeys';
 
 export const languages = {
 	en,
 	'es-sv': es_sv,
 	fr,
-	nl
+	nl,
+	sw
 };
 
 export const enhancedLanguages = merge({}, languages);
@@ -22,5 +24,6 @@ export const languageNames: Record<LanguageKey, string> = {
 	en: 'English',
 	'es-sv': 'Español (El Salvador)',
 	fr: 'Français',
-	nl: 'Nederlands'
+	nl: 'Nederlands',
+	sw: 'Swahili'
 };
