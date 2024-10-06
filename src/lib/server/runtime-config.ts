@@ -154,6 +154,12 @@ const baseConfig = {
 		secretKey: '',
 		currency: 'EUR' as Currency
 	},
+	flexpay:{
+		merchand_code:'',
+		api_key:'',
+		currency: 'USD' as Currency
+
+	},
 	bity: {
 		clientId: ''
 	},

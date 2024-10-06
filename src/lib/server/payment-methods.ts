@@ -6,6 +6,7 @@ import { isPhoenixdConfigured } from './phoenixd';
 import { runtimeConfig } from './runtime-config';
 import { isSumupEnabled } from './sumup';
 import { isStripeEnabled } from './stripe';
+import { isMobileMoneyEnabled } from './mobilemoney';
 
 const ALL_PAYMENT_METHODS = [
 	'card',
@@ -13,11 +14,12 @@ const ALL_PAYMENT_METHODS = [
 	'bitcoin',
 	'lightning',
 	'point-of-sale',
-	'free'
+	'free',
+	"mobile-money"
 ] as const;
 export type PaymentMethod = (typeof ALL_PAYMENT_METHODS)[number];
 
-export type PaymentProcessor = 'sumup' | 'bitcoind' | 'lnd' | 'phoenixd' | 'stripe';
+export type PaymentProcessor = 'sumup' | 'bitcoind' | 'lnd' | 'phoenixd' | 'stripe'|'flexpay';
 
 export const paymentMethods = (opts?: {
 	role?: string;
@@ -48,6 +50,8 @@ export const paymentMethods = (opts?: {
 							return opts?.role === POS_ROLE_ID || opts?.includePOS;
 						case 'free':
 							return opts?.totalSatoshis === undefined;
+						case 'mobile-money':
+							return isMobileMoneyEnabled()
 					}
 				}
 		  );

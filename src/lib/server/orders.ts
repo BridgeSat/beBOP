@@ -20,7 +20,7 @@ import { ORIGIN } from '$env/static/private';
 import { emailsEnabled } from './email';
 import { sum } from '$lib/utils/sum';
 import { computeDeliveryFees, type Cart, computePriceInfo } from '$lib/types/Cart';
-import { CURRENCY_UNIT, type Currency } from '$lib/types/Currency';
+import { Currency, CURRENCY_UNIT } from '$lib/types/Currency';
 import { sumCurrency } from '$lib/utils/sumCurrency';
 import { refreshAvailableStockInDb } from './product';
 import { checkCartItems } from './cart';
@@ -38,6 +38,7 @@ import { toUrlEncoded } from '$lib/utils/toUrlEncoded';
 import { isPhoenixdConfigured, phoenixdCreateInvoice } from './phoenixd';
 import { isSumupEnabled } from './sumup';
 import { isStripeEnabled } from './stripe';
+import { isMobileMoneyEnabled } from './mobilemoney';
 
 async function generateOrderNumber(): Promise<number> {
 	const res = await collections.runtimeConfig.findOneAndUpdate(
@@ -1062,11 +1063,55 @@ async function generatePaymentInfo(params: {
 		case 'bank-transfer': {
 			return { address: runtimeConfig.sellerIdentity?.bank?.iban };
 		}
+		case 'mobile-money':{
+			return await generateMobileMoneyPaymentInfo(params);
+		}
 		case 'card':
 			return await generateCardPaymentInfo(params);
 	}
 }
 
+async function generateMobileMoneyPaymentInfo(params:{
+
+	orderId: string;
+	orderNumber: number;
+	toPay: Price;
+	phone:string
+	expiresAt?: Date;
+	
+}) {
+
+
+	if(isMobileMoneyEnabled()){
+		// create mobile money payment intent using flexpay
+
+		const response = await fetch('',{
+			method:'POST',
+			headers:{
+				Authorization:`Bear ${runtimeConfig.flexpay.api_key}`,
+				'Content-Type': "application/json"
+			},
+			body:JSON.stringify({
+				"merchant":runtimeConfig.flexpay.merchand_code,
+				"type": "1",
+				"phone": params.phone,
+ 				 "reference": params.orderId,
+  				"amount": params.toPay.amount,
+  				"currency":params.toPay.currency,
+  				"callbackUrl":"google.com"
+			}),
+		});
+		if(!response.ok){
+			console.error(await response.text);
+			throw error(402, "Error while making payment request")
+		}
+
+
+
+	}
+	throw error(501, 'No mobile money processor configured');
+	
+}
 async function generateCardPaymentInfo(params: {
 	orderId: string;
 	orderNumber: number;
@@ -1181,6 +1226,7 @@ async function generateCardPaymentInfo(params: {
 			processor: 'stripe'
 		};
 	}
+	
 
 	throw error(501, 'No payment processor configured');
 }
@@ -1230,6 +1276,11 @@ function paymentPrice(paymentMethod: PaymentMethod, price: Price): Price {
 				amount: toCurrency('SAT', price.amount, price.currency),
 				currency: 'SAT'
 			};
+		case 'mobile-money':
+			return{
+				amount:toCurrency(runtimeConfig.flexpay.currency,price.amount,price.currency),
+				currency:runtimeConfig.flexpay.currency
+			}	
 	}
 }
 
