@@ -126,6 +126,11 @@ export const adminLinks: AdminLinks = [
 			{
 				href: '/admin/phoenixd',
 				label: 'PhoenixD'
+			},
+			{
+				href:'/admin/mobilemoney',
+				label:'Mobile money'
+
 			}
 			// {
 			// 	href: '/admin/bity',

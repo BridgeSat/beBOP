@@ -247,6 +247,54 @@ async function maintainOrders() {
 								console.error('Unknown card processor', payment.processor);
 						}
 						break;
+					case 'mobilemoney':	{
+						try {
+							
+							if (!runtimeConfig.flexpay.api_key) {
+								throw new Error('Missing flexpay API key');
+							}
+							const checkoutId = payment.checkoutId;
+							if (!checkoutId) {
+								throw new Error('Missing checkout ID on mobile money order');
+							}
+							const response = await fetch('backend.flexpay.cd/api/rest/v1/check/'+checkoutId,{
+								headers:{
+									'Authorization':'Bearer'+runtimeConfig.flexpay.api_key
+								}
+							});
+							const checkout = await response.json();
+							if (!response.ok) {
+								throw new Error(
+									'Failed to fetch checkout status for order'
+									+order._id +', checkout '+checkoutId
+								);
+							}
+
+							if (checkout.code == "0") {
+								if (checkout.transaction.status === '0') {
+									payment.transactions = checkout.transaction;
+									order = await onOrderPayment(order,payment,{
+										amount:checkout.amount,
+										currency:checkout.currency
+									});
+									
+								} else {
+									order = await onOrderPaymentFailed(order,payment,'expired');
+								}	
+							}else{
+									throw new Error('Fail to get payment with this checkout ID');
+									
+							}
+						} catch (error) {
+							console.error(inspect(error,{depth:10}));
+						} finally{
+							break;
+						}
+
+					}
+						
+
+						
 					// handled by admin
 					case 'bank-transfer':
 					case 'point-of-sale':

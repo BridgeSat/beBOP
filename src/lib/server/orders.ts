@@ -1071,21 +1071,24 @@ async function generatePaymentInfo(params: {
 	}
 }
 
-async function generateMobileMoneyPaymentInfo(params:{
-
+async function generateMobileMoneyPaymentInfo(params: {
 	orderId: string;
 	orderNumber: number;
 	toPay: Price;
 	phone:string
 	expiresAt?: Date;
-	
-}) {
+}) : Promise<{
+	checkoutId: string;
+	meta: unknown;
+	processor: PaymentProcessor;
+	clientSecret?: string;
+}>  {
 
 
 	if(isMobileMoneyEnabled()){
 		// create mobile money payment intent using flexpay
 
-		const response = await fetch('',{
+		const response = await fetch('https://backend.flexpay.cd/api/rest/v1/paymentService',{
 			method:'POST',
 			headers:{
 				Authorization:`Bear ${runtimeConfig.flexpay.api_key}`,
@@ -1105,6 +1108,19 @@ async function generateMobileMoneyPaymentInfo(params:{
 			console.error(await response.text);
 			throw error(402, "Error while making payment request")
 		}
+		const json = await response.json()
+
+		if (json.data.code !== '0') {
+			console.error('Mobile money transaction init failed', json);
+			throw error(402,'Payment request failed')
+		}
+		const checkoutId = json.data.orderNumber;
+
+		return {
+			checkoutId,
+			meta: json,
+			processor: 'flexpay'
+		};
 
 
 
